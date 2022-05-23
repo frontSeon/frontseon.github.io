@@ -1,0 +1,31 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+/* default */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide_1 {
+  background: #ff5656;
+}
+
+.swiper-slide_2 {
+  background: #ff3333;
+}
+
+.swiper-slide_3 {
+  background: #ff1111;
+}
+/*# sourceMappingURL=default.css.map */
