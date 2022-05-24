@@ -6,6 +6,7 @@ $(function () {
     // swiper
     const swiper = new Swiper('.swiper', {
         direction: 'vertical',
+        resistanceRatio: 0,
         loop: false,
         pagination: {
             el: '.swiper-pagination',
