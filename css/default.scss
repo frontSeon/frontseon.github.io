@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
@@ -12,29 +11,31 @@
 .wrap {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
-// swiper
-.swiper{
-    width: 100%;
-    height: 100vh;
-}
-.swiper-slide_1{
-    background: #ff5656;
-}
-.swiper-slide_2{
-    background: #ff3333;
-}
-.swiper-slide_3{
-    background: #ff1111;
-}
-.swiper-pagination .swiper-pagination-bullet{
-    width: 5px;
-    height: 10vh;
-    margin: 20px 0;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.5);
-}
-.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background: rgba(255, 255, 255, 0.8);
+.section{
+    overflow: hidden;
+    position: relative;
+    &_bg{
+        position: absolute;
+        left: 0;
+        user-select: none;
+        &__dim{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #202020;
+            opacity: 0.5;
+        }
+        &__video{
+            height: 120vh;
+        }
+    }
+    &_wrap{
+        position: relative;
+        padding: 20px;
+    }
 }
