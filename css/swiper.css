@@ -4,14 +4,44 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: 5px;
-  height: 10vh;
+  width: 1vh;
+  height: 1vh;
   margin: 20px 0;
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: rgba(255, 255, 255, 0.8);
+  width: 1vh;
+  height: 1vh;
+  -webkit-animation: swiperActive;
+          animation: swiperActive;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  background: white;
+}
+
+@-webkit-keyframes swiperActive {
+  0% {
+    width: 1vh;
+    height: 1vh;
+  }
+  100% {
+    width: 1vh;
+    height: 50vh;
+  }
+}
+
+@keyframes swiperActive {
+  0% {
+    width: 1vh;
+    height: 1vh;
+  }
+  100% {
+    width: 1vh;
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=swiper.css.map */
