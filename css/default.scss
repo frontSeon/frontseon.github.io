@@ -8,12 +8,6 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-// mobile response
-body{
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-}
-
 .hidden{
     display: none;
 }
@@ -49,5 +43,7 @@ body{
         margin-top: 7vh;
         position: relative;
         padding: 20px;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
 }
