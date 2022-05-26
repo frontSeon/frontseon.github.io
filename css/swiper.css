@@ -4,15 +4,15 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: 1vh;
-  height: 1vh;
+  width: 0.5vh;
+  height: 0.5vh;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.7);
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 1vh;
-  height: 1vh;
+  width: 0.5vh;
+  height: 0.5vh;
   -webkit-animation: swiperActive;
           animation: swiperActive;
   -webkit-animation-fill-mode: forwards;
@@ -24,22 +24,22 @@
 
 @-webkit-keyframes swiperActive {
   0% {
-    width: 1vh;
-    height: 1vh;
+    width: 0.5vh;
+    height: 0.5vh;
   }
   100% {
-    width: 1vh;
+    width: 0.5vh;
     height: 50vh;
   }
 }
 
 @keyframes swiperActive {
   0% {
-    width: 1vh;
-    height: 1vh;
+    width: 0.5vh;
+    height: 0.5vh;
   }
   100% {
-    width: 1vh;
+    width: 0.5vh;
     height: 50vh;
   }
 }

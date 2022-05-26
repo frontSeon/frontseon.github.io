@@ -8,29 +8,27 @@
         align-items: center;
         top:0;
         left: 0;
-        padding: 2vh;
-        background: #FFFFFF;
-        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
-        opacity: 0.4;
+        padding: 1vh 2vh;
     }
     &_logo{
         position: relative;
-        height: 5vh;
-        width: 15%;
-        background: #202020;
+        &__img{
+            width: 6vh;
+            height: 6vh;
+            background: url(/images/header/header_logo.png) no-repeat center;
+            background-size: 100% auto;
+        }
     }
     &_menu-pc{
         position: relative;
         height: 5vh;
         width: 50%;
         margin-left: auto;
-        background: #202020;
     }
     &_menu-mobile{
         position: relative;
         height: 5vh;
         width: 5vh;
         margin-left: auto;
-        background: #202020;
     }
 }

@@ -14,18 +14,18 @@
           align-items: center;
   top: 0;
   left: 0;
-  padding: 2vh;
-  background: #FFFFFF;
-  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
-          box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
-  opacity: 0.4;
+  padding: 1vh 2vh;
 }
 
 .navi_logo {
   position: relative;
-  height: 5vh;
-  width: 15%;
-  background: #202020;
+}
+
+.navi_logo__img {
+  width: 6vh;
+  height: 6vh;
+  background: url(/images/header/header_logo.png) no-repeat center;
+  background-size: 100% auto;
 }
 
 .navi_menu-pc {
@@ -33,7 +33,6 @@
   height: 5vh;
   width: 50%;
   margin-left: auto;
-  background: #202020;
 }
 
 .navi_menu-mobile {
@@ -41,6 +40,5 @@
   height: 5vh;
   width: 5vh;
   margin-left: auto;
-  background: #202020;
 }
 /*# sourceMappingURL=navigation.css.map */
