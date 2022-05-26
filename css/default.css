@@ -20,6 +20,8 @@
 .section {
   overflow: hidden;
   position: relative;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .section_bg {
@@ -50,7 +52,5 @@
   margin-top: 7vh;
   position: relative;
   padding: 20px;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 /*# sourceMappingURL=default.css.map */

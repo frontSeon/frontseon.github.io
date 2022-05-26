@@ -21,6 +21,8 @@
 .section{
     overflow: hidden;
     position: relative;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     &_bg{
         position: absolute;
         left: 0;
@@ -43,7 +45,5 @@
         margin-top: 7vh;
         position: relative;
         padding: 20px;
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
     }
 }
