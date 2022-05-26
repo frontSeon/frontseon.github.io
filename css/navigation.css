@@ -1,0 +1,46 @@
+.navi {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.navi_wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  padding: 2vh;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
+}
+
+.navi_logo {
+  position: relative;
+  height: 5vh;
+  width: 15%;
+  background: #202020;
+}
+
+.navi_menu-pc {
+  position: relative;
+  height: 5vh;
+  width: 50%;
+  margin-left: auto;
+  background: #202020;
+}
+
+.navi_menu-mobile {
+  position: relative;
+  height: 5vh;
+  width: 5vh;
+  margin-left: auto;
+  background: #202020;
+}
+/*# sourceMappingURL=navigation.css.map */

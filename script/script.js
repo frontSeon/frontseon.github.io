@@ -1,8 +1,5 @@
 $(function () {
-    $('.test').on('click', function () {
-        $(this).toggleClass('active');
-    });
-    
+
     // swiper
     const swiper = new Swiper('.swiper', {
         direction: 'vertical',

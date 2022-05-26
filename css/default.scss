@@ -8,6 +8,16 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+// mobile response
+body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+.hidden{
+    display: none;
+}
+
 .wrap {
     position: relative;
     width: 100%;
@@ -23,7 +33,7 @@
         user-select: none;
         &__dim{
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
@@ -35,6 +45,8 @@
         }
     }
     &_wrap{
+        position: relative;
+        margin-top: 7vh;
         position: relative;
         padding: 20px;
     }

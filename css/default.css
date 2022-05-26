@@ -7,6 +7,15 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+.hidden {
+  display: none;
+}
+
 .wrap {
   position: relative;
   width: 100%;
@@ -42,6 +51,8 @@
 }
 
 .section_wrap {
+  position: relative;
+  margin-top: 7vh;
   position: relative;
   padding: 20px;
 }

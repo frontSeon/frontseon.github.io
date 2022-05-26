@@ -1,0 +1,36 @@
+.navi{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    &_wrap{
+        position: relative;
+        display: flex;
+        align-items: center;
+        top:0;
+        left: 0;
+        padding: 2vh;
+        background: #FFFFFF;
+        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+        opacity: 0.4;
+    }
+    &_logo{
+        position: relative;
+        height: 5vh;
+        width: 15%;
+        background: #202020;
+    }
+    &_menu-pc{
+        position: relative;
+        height: 5vh;
+        width: 50%;
+        margin-left: auto;
+        background: #202020;
+    }
+    &_menu-mobile{
+        position: relative;
+        height: 5vh;
+        width: 5vh;
+        margin-left: auto;
+        background: #202020;
+    }
+}
