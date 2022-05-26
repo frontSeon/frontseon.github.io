@@ -21,14 +21,57 @@
     }
     &_menu-pc{
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         height: 5vh;
-        width: 50%;
+        width: 40%;
         margin-left: auto;
+        &__btn{
+            width: 25%;
+            font-size: 0.9em;
+            color: #F1F1F1;
+            cursor: pointer;
+        }
+        :hover{
+            opacity: 0.5;
+        }
+    }
+    &_menu__btn{
+        color: #F1F1F1;
+        font-weight: 700;
+        margin-left: auto;
+        cursor: pointer;
     }
     &_menu-mobile{
-        position: relative;
-        height: 5vh;
-        width: 5vh;
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 6vh;
         margin-left: auto;
+        &__btn{
+            width: 6vh;
+            height: 4vh;
+            padding: 1vh 2vh;
+            cursor: pointer;
+            color: #F1F1F1;
+        }
+    }
+}
+
+@media all and (max-width: 1000px){
+    .navi_menu-pc{
+        display: none;
+    }
+}
+@media all and (min-width: 1000px){
+    .navi_menu-mobile{
+        display: none;
+    }
+    .navi_menu__btn{
+        display: none;
     }
 }
