@@ -6,6 +6,7 @@
   padding: 0;
   letter-spacing: 1px;
   font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -57,7 +58,7 @@ ul, li {
 
 .section_wrap {
   position: relative;
-  margin-top: 7vh;
+  margin-top: 8vh;
   position: relative;
   padding: 20px;
 }

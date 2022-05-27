@@ -19,6 +19,7 @@
 
 .navi_logo {
   position: relative;
+  cursor: pointer;
 }
 
 .navi_logo__img {
@@ -45,14 +46,48 @@
 }
 
 .navi_menu-pc__btn {
-  width: 25%;
-  font-size: 0.9em;
-  color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  height: 5vh;
   cursor: pointer;
 }
 
-.navi_menu-pc :hover {
-  opacity: 0.5;
+.navi_menu-pc__btn_txt {
+  line-height: 5vh;
+  opacity: 1;
+  font-size: 0.5rem;
+  color: #F1F1F1;
+}
+
+.navi_menu-pc__btn_bd {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 5vh;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #F1F1F1;
+  opacity: 0;
+}
+
+.navi_menu-pc__btn_bd:hover {
+  -webkit-animation: pcbtnActive;
+          animation: pcbtnActive;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .navi_menu__btn {
@@ -110,33 +145,6 @@
   margin-left: auto;
 }
 
-.navi_menu-mobile :nth-of-type(1) {
-  -webkit-animation: btnActive1;
-          animation: btnActive1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-}
-
-.navi_menu-mobile :nth-of-type(2) {
-  -webkit-animation: btnActive2;
-          animation: btnActive2;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-}
-
-.navi_menu-mobile :nth-of-type(3) {
-  -webkit-animation: btnActive3;
-          animation: btnActive3;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-}
-
 .navi_menu-mobile__btn {
   position: absolute;
   top: -5.5vh;
@@ -152,14 +160,60 @@
   cursor: pointer;
 }
 
+.navi_menu-mobile__btn:nth-of-type(1) {
+  -webkit-animation: btnActive1;
+          animation: btnActive1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.navi_menu-mobile__btn:nth-of-type(2) {
+  -webkit-animation: btnActive2;
+          animation: btnActive2;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.navi_menu-mobile__btn:nth-of-type(3) {
+  -webkit-animation: btnActive3;
+          animation: btnActive3;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
 .navi_menu-mobile__btn:hover {
   background-color: #00c1bc;
   color: #F1F1F1;
 }
 
-.navi_menu-mobile__btn-disabled {
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+@-webkit-keyframes pcbtnActive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pcbtnActive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes btnActive {
@@ -242,7 +296,7 @@
   }
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 999px) {
   .navi_menu-pc {
     display: none;
   }

@@ -12,6 +12,7 @@
     }
     &_logo{
         position: relative;
+        cursor: pointer;
         &__img{
             width: 6vh;
             height: 6vh;
@@ -28,13 +29,34 @@
         width: 40%;
         margin-left: auto;
         &__btn{
-            width: 25%;
-            font-size: 0.9em;
-            color: #F1F1F1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 5vh;
             cursor: pointer;
-        }
-        :hover{
-            opacity: 0.5;
+            &_txt{
+                line-height: 5vh;
+                opacity: 1;
+                font-size: 0.5rem;
+                color: #F1F1F1;
+            }
+            &_bd{
+                position: absolute;
+                top: 0;
+                width: 20%;
+                height: 5vh;
+                border: 1px solid transparent;
+                box-sizing: border-box;
+                border-color: #F1F1F1;
+                opacity: 0;
+                &:hover{
+                    animation: pcbtnActive;
+                    animation-fill-mode: forwards;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in-out;
+                }
+            }
         }
     }
     &_menu__btn{
@@ -70,21 +92,6 @@
         align-items: center;
         width: 6vh;
         margin-left: auto;
-            :nth-of-type(1){
-                animation: btnActive1;
-                animation-fill-mode: forwards;
-                animation-duration: 0.3s;
-            }
-            :nth-of-type(2){
-                animation: btnActive2;
-                animation-fill-mode: forwards;
-                animation-duration: 0.3s;
-            }
-            :nth-of-type(3){
-                animation: btnActive3;
-                animation-fill-mode: forwards;
-                animation-duration: 0.3s;
-            }
         &__btn{
             position: absolute;
             top: -5.5vh;
@@ -97,18 +104,43 @@
             box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
             border-radius: 50px;
             cursor: pointer;
+            &:nth-of-type(1){
+                animation: btnActive1;
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-timing-function: ease-in-out;
+            }
+            &:nth-of-type(2){
+                animation: btnActive2;
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-timing-function: ease-in-out;
+            }
+            &:nth-of-type(3){
+                animation: btnActive3;
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-timing-function: ease-in-out;
+            }
             &:hover{
                 background-color: #00c1bc;
                 color: #F1F1F1;
-            }
-            &-disabled{
-                animation-fill-mode: backwards;
             }
         }
     }
 }
 
 // animation
+@keyframes pcbtnActive {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 @keyframes btnActive {
     0%{
         transform: scale(0);
@@ -145,7 +177,7 @@
 }
 
 // media
-@media all and (max-width: 1000px){
+@media all and (max-width: 999px){
     .navi_menu-pc{
         display: none;
     }
