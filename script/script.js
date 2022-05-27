@@ -18,10 +18,10 @@ $(function () {
     });
 
     // navigation-mobile
-    $('.navi_menu__btn').mouseenter(function(){
-        $('.navi_menu-mobile').stop().slideDown(400);
+    $('.navi_menu__btn').on('click', function(){
+        $('.navi_menu-mobile__btn').toggleClass('hidden');
     });
-    $('.navi_menu__btn').mouseleave(function(){
-        $('.navi_menu-mobile').stop().slideUp(400);
+    $('.navi_menu__btn').on('click', function(){
+        $('.navi_menu__btn_active').toggleClass('hidden');
     });
 });

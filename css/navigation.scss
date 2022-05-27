@@ -38,10 +38,28 @@
         }
     }
     &_menu__btn{
-        color: #F1F1F1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5vh;
+        height: 5vh;
         font-weight: 700;
         margin-left: auto;
+        border: 2px solid transparent;
+        border-color: #F1F1F1;
+        border-radius: 50px;
+        box-sizing: border-box;
+        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
         cursor: pointer;
+        &_active{
+            width: 5vh;
+            height: 5vh;
+            background-color: #F1F1F1;
+            border-radius: 30px;
+            animation: btnActive;
+            animation-fill-mode: forwards;
+            animation-duration: 0.2s;
+        }
     }
     &_menu-mobile{
         position: absolute;
@@ -52,16 +70,81 @@
         align-items: center;
         width: 6vh;
         margin-left: auto;
+            :nth-of-type(1){
+                animation: btnActive1;
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+            }
+            :nth-of-type(2){
+                animation: btnActive2;
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+            }
+            :nth-of-type(3){
+                animation: btnActive3;
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+            }
         &__btn{
-            width: 6vh;
-            height: 4vh;
-            padding: 1vh 2vh;
+            position: absolute;
+            top: -5.5vh;
+            right: 2vh;
+            text-align: center;
+            line-height: 5vh;
+            width: 5vh;
+            height: 5vh;
+            background-color: #F1F1F1;
+            box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 50px;
             cursor: pointer;
-            color: #F1F1F1;
+            &:hover{
+                background-color: #00c1bc;
+                color: #F1F1F1;
+            }
+            &-disabled{
+                animation-fill-mode: backwards;
+            }
         }
     }
 }
 
+// animation
+@keyframes btnActive {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes btnActive1 {
+    0%{
+        right: 2vh;
+    }
+    100%{
+        right: 10vh;
+    }
+}
+@keyframes btnActive2 {
+    0%{
+        right: 2vh;
+        top: -5.5vh;
+    }
+    100%{
+        right: 8vh;
+        top: 0.6vh;
+    }
+}
+@keyframes btnActive3 {
+    0%{
+        top: -5.5vh;
+    }
+    100%{
+        top: 3vh;
+    }
+}
+
+// media
 @media all and (max-width: 1000px){
     .navi_menu-pc{
         display: none;
