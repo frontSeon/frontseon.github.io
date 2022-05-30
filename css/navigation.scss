@@ -80,7 +80,7 @@
             border-radius: 30px;
             animation: btnActive;
             animation-fill-mode: forwards;
-            animation-duration: 0.2s;
+            animation-duration: 0.3s;
         }
     }
     &_menu-mobile{
@@ -143,10 +143,10 @@
 
 @keyframes btnActive {
     0%{
-        transform: scale(0);
+        opacity: 0;
     }
     100%{
-        transform: scale(1);
+        opacity: 1;
     }
 }
 @keyframes btnActive1 {

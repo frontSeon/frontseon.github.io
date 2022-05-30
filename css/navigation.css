@@ -123,8 +123,8 @@
           animation: btnActive;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .navi_menu-mobile {
@@ -218,23 +218,19 @@
 
 @-webkit-keyframes btnActive {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes btnActive {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
