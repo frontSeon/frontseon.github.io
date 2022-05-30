@@ -1,65 +1,76 @@
-.navi{
+// navigation
+.navi {
     position: fixed;
     z-index: 999;
     width: 100%;
-    &_wrap{
+
+    &_wrap {
         position: relative;
         display: flex;
         align-items: center;
-        top:0;
+        top: 0;
         left: 0;
         padding: 1vh 2vh;
     }
-    &_logo{
+
+    &_logo {
         position: relative;
         cursor: pointer;
-        &__img{
+
+        &__img {
             width: 6vh;
             height: 6vh;
             background: url(/images/header/header_logo.png) no-repeat center;
             background-size: 100% auto;
         }
     }
-    &_menu-pc{
+
+    &_menu-pc {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 5vh;
-        width: 40%;
+        width: 30%;
         margin-left: auto;
-        &__btn{
+
+        &__btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 20%;
+            width: 33%;
             height: 5vh;
             cursor: pointer;
-            &_txt{
+
+            &_txt {
                 line-height: 5vh;
                 opacity: 1;
-                font-size: 0.5rem;
+                font-size: 1rem;
                 color: #F1F1F1;
+                font-family: 'Dancing Script', sans-serif;
             }
-            &_bd{
+
+            &_bd {
                 position: absolute;
                 top: 0;
-                width: 20%;
+                width: 33%;
                 height: 5vh;
                 border: 1px solid transparent;
                 box-sizing: border-box;
-                border-color: #F1F1F1;
+                border-color: #F4F4F4;
                 opacity: 0;
-                &:hover{
+
+                &:hover {
                     animation: pcbtnActive;
                     animation-fill-mode: forwards;
-                    animation-duration: 1s;
+                    animation-duration: 0.5s;
                     animation-timing-function: ease-in-out;
                 }
             }
         }
     }
-    &_menu__btn{
+
+    &_menu__btn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -73,7 +84,8 @@
         box-sizing: border-box;
         box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
         cursor: pointer;
-        &_active{
+
+        &_active {
             width: 5vh;
             height: 5vh;
             background-color: #F1F1F1;
@@ -83,7 +95,8 @@
             animation-duration: 0.3s;
         }
     }
-    &_menu-mobile{
+
+    &_menu-mobile {
         position: absolute;
         top: 7vh;
         right: 0;
@@ -92,7 +105,8 @@
         align-items: center;
         width: 6vh;
         margin-left: auto;
-        &__btn{
+
+        &__btn {
             position: absolute;
             top: -5.5vh;
             right: 2vh;
@@ -104,25 +118,29 @@
             box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
             border-radius: 50px;
             cursor: pointer;
-            &:nth-of-type(1){
+
+            &:nth-of-type(1) {
                 animation: btnActive1;
                 animation-fill-mode: forwards;
                 animation-duration: 0.3s;
                 animation-timing-function: ease-in-out;
             }
-            &:nth-of-type(2){
+
+            &:nth-of-type(2) {
                 animation: btnActive2;
                 animation-fill-mode: forwards;
                 animation-duration: 0.3s;
                 animation-timing-function: ease-in-out;
             }
-            &:nth-of-type(3){
+
+            &:nth-of-type(3) {
                 animation: btnActive3;
                 animation-fill-mode: forwards;
                 animation-duration: 0.3s;
                 animation-timing-function: ease-in-out;
             }
-            &:hover{
+
+            &:hover {
                 background-color: #00c1bc;
                 color: #F1F1F1;
             }
@@ -132,61 +150,75 @@
 
 // animation
 @keyframes pcbtnActive {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    50% {
         opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
 
 @keyframes btnActive {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 @keyframes btnActive1 {
-    0%{
+    0% {
         right: 2vh;
     }
-    100%{
+
+    100% {
         right: 10vh;
     }
 }
+
 @keyframes btnActive2 {
-    0%{
+    0% {
         right: 2vh;
         top: -5.5vh;
     }
-    100%{
+
+    100% {
         right: 8vh;
         top: 0.6vh;
     }
 }
+
 @keyframes btnActive3 {
-    0%{
+    0% {
         top: -5.5vh;
     }
-    100%{
+
+    100% {
         top: 3vh;
     }
 }
 
 // media
-@media all and (max-width: 999px){
-    .navi_menu-pc{
+@media all and (max-width: 999px) {
+    .navi_menu-pc {
         display: none;
     }
 }
-@media all and (min-width: 1000px){
-    .navi_menu-mobile{
+
+@media all and (min-width: 1000px) {
+    .navi_menu-mobile {
         display: none;
     }
-    .navi_menu__btn{
+
+    .navi_menu__btn {
         display: none;
     }
 }

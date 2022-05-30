@@ -1,3 +1,4 @@
+// script
 $(function () {
 
     // swiper
@@ -7,7 +8,7 @@ $(function () {
         loop: false,
         mousewheel: true,
         keyboard: true,
-        
+
         // navigation-button
         on: {
             slideChangeTransitionStart: function () {
@@ -21,12 +22,13 @@ $(function () {
     });
 
     // navigation-button
-    var buttonItem = $('.navi_menu-mobile__btn');
+    var buttonItem = $('.navi_menu-mobile__btn, .navi_menu-pc__btn');
     buttonItem.click(function () {
         var ind = $(this).index();
         changeButton(ind);
         swiper.slideTo(ind);
     })
+
     function changeButton(index) {
         buttonItem.removeClass('active').eq(index).addClass('active');
     }

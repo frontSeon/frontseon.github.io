@@ -1,17 +1,17 @@
-
 // swiper
-.swiper{
+.swiper {
     width: 100%;
     height: 100vh;
 }
 
-.swiper-pagination .swiper-pagination-bullet{
+.swiper-pagination .swiper-pagination-bullet {
     width: 0.5vh;
     height: 0.5vh;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.7);
 }
-.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 0.5vh;
     height: 0.5vh;
     animation: swiperActive;
@@ -22,11 +22,12 @@
 
 // swiper animation
 @keyframes swiperActive {
-    0%{
+    0% {
         width: 0.5vh;
         height: 0.5vh;
     }
-    100%{
+
+    100% {
         width: 0.5vh;
         height: 50vh;
     }
