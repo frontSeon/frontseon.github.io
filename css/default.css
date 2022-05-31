@@ -7,7 +7,7 @@
   padding: 0;
   letter-spacing: 1px;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 15px;
+  font-size: 62.5%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -36,7 +36,7 @@ li {
   min-height: -webkit-fill-available;
 }
 
-.section_bg {
+.section__bg {
   position: absolute;
   left: 0;
   -webkit-user-select: none;
@@ -45,7 +45,7 @@ li {
           user-select: none;
 }
 
-.section_bg__dim {
+.section__bg_dim {
   position: absolute;
   top: 0;
   left: 0;
@@ -54,7 +54,7 @@ li {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.section_bg__video {
+.section__bg_video {
   height: 120vh;
 }
 
@@ -62,5 +62,92 @@ li {
   position: relative;
   margin-top: 8vh;
   padding: 20px;
+}
+
+.section__main_tit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-top: 5vh;
+}
+
+.section__main_tit span {
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: 'Dancing Script', sans-serif;
+  color: #F1F1F1;
+}
+
+.section__main_tit_ani {
+  opacity: 0;
+  -webkit-animation: mainAni;
+          animation: mainAni;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+.section__main_tit_ani-on:nth-of-type(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.section__main_tit_ani-on:nth-of-type(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.section__main_tit_ani-on:nth-of-type(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.section__main_tit_ani-on:nth-of-type(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.section__main_tit_ani-on:nth-of-type(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.section__main_tit_ani-on:nth-of-type(6) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.section__main_tit_ani-on:nth-of-type(7) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.section__main_tit_ani-on:nth-of-type(8) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+@-webkit-keyframes mainAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=default.css.map */

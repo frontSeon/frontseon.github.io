@@ -16,22 +16,35 @@ $(function () {
                 changeButton(n);
             }
         },
+        
+        // main-title-animation
+        on: {
+            activeIndexChange: function(){
+                if(this.realIndex === 0){
+                    $('.section__main_tit_ani').addClass('section__main_tit_ani-on');
+                    $('.section__main_tit_ani').removeClass('hidden');
+                }else{
+                    $('.section__main_tit_ani').removeClass('section__main_tit_ani-on');
+                    $('.section__main_tit_ani').addClass('hidden');
+                }
+            }
+        },
         pagination: {
             el: '.swiper-pagination',
         }
     });
 
     // navigation-button
-    var buttonItem = $('.navi_menu-mobile__btn, .navi_menu-pc__btn');
+    var buttonItem = $('.navi_menu-pc__btn, .navi_menu-mobile__btn');
     buttonItem.click(function () {
         var ind = $(this).index();
         changeButton(ind);
         swiper.slideTo(ind);
-    })
+    });
 
     function changeButton(index) {
         buttonItem.removeClass('active').eq(index).addClass('active');
-    }
+    };
 
     // navigation-mobile
     $('.navi_menu__btn').on('click', function () {
