@@ -64,4 +64,23 @@ $(function () {
     $('.navi_logo').click(function () {
         location.reload();
     });
+
+    // loading
+    $(document).ready(function(){
+        $('.loading').addClass('hidden');
+    });
+
+    let loadingAni = document.getElementsByClassName("loading__lottie");
+    function loadBMAnimation(loader) {
+        var animation = lottie.loadAnimation({
+        container: loader,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "/lottie/loading.json"
+        });
+    }
+    for (let i = 0; i < loadingAni.length; i++) {
+        loadBMAnimation(loadingAni[i]);
+    }
 });
