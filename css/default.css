@@ -133,6 +133,41 @@ li {
           animation-delay: 1.6s;
 }
 
+.section__sub_tit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 3vh;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #F1F1F1;
+  opacity: 0;
+}
+
+.section__sub_tit-on {
+  -webkit-animation: mainAni;
+          animation: mainAni;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.section__sub_tit_bar {
+  width: 1vh;
+  height: 3vh;
+  margin-right: 1vh;
+  background: #F1F1F1;
+}
+
 @-webkit-keyframes mainAni {
   0% {
     opacity: 0;

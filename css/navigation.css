@@ -200,6 +200,45 @@
   color: #F1F1F1;
 }
 
+.navi_bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background: #00c1bc;
+  display: none;
+}
+
+.navi_bg__btn {
+  position: absolute;
+  right: 0;
+  top: -15vh;
+  width: 15vh;
+  height: 16.5vh;
+  border-radius: 0 0 0 30px;
+  background: #00c1bc;
+}
+
+.navi_bg__btn-on {
+  -webkit-animation: naviBgon;
+          animation: naviBgon;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.navi_bg__btn-disabled {
+  -webkit-animation: naviBgdisabled;
+          animation: naviBgdisabled;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes pcbtnActive {
   0% {
     opacity: 0;
@@ -221,6 +260,42 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes naviBgon {
+  0% {
+    top: -15vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes naviBgon {
+  0% {
+    top: -15vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes naviBgdisabled {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -15vh;
+  }
+}
+
+@keyframes naviBgdisabled {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -15vh;
   }
 }
 

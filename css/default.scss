@@ -57,69 +57,107 @@ li {
         margin-top: 8vh;
         padding: 20px;
     }
-    &__main_tit{
+
+    &__main_tit {
         position: relative;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         height: auto;
         margin-top: 5vh;
-        span{
+
+        span {
             font-size: 5rem;
             font-weight: 400;
             font-family: 'Dancing Script', sans-serif;
             color: #F1F1F1;
         }
-        &_ani{
+
+        &_ani {
             opacity: 0;
             animation: mainAni;
             animation-fill-mode: forwards;
             animation-duration: 0.8s;
-            &-on:nth-of-type(1){
+
+            &-on:nth-of-type(1) {
                 animation-delay: 0.2s;
             }
-            &-on:nth-of-type(2){
+
+            &-on:nth-of-type(2) {
                 animation-delay: 0.4s;
             }
-            &-on:nth-of-type(3){
+
+            &-on:nth-of-type(3) {
                 animation-delay: 0.6s;
             }
-            &-on:nth-of-type(4){
+
+            &-on:nth-of-type(4) {
                 animation-delay: 0.8s;
             }
-            &-on:nth-of-type(5){
+
+            &-on:nth-of-type(5) {
                 animation-delay: 1s;
             }
-            &-on:nth-of-type(6){
+
+            &-on:nth-of-type(6) {
                 animation-delay: 1.2s;
             }
-            &-on:nth-of-type(7){
+
+            &-on:nth-of-type(7) {
                 animation-delay: 1.4s;
             }
-            &-on:nth-of-type(8){
+
+            &-on:nth-of-type(8) {
                 animation-delay: 1.6s;
             }
         }
     }
+
+    &__sub_tit {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 3vh;
+        font-size: 2rem;
+        font-weight: 100;
+        color: #F1F1F1;
+        opacity: 0;
+        &-on{
+            animation: mainAni;
+            animation-fill-mode: forwards;
+            animation-duration: 0.8s;
+            animation-delay: 1.8s;
+        }
+        &_bar {
+            width: 1vh;
+            height: 3vh;
+            margin-right: 1vh;
+            background: #F1F1F1;
+        }
+    }
 }
 
-@keyframes mainAni{
-    0%{
+@keyframes mainAni {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.loading{
+.loading {
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    &__wrap{
+
+    &__wrap {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -127,7 +165,8 @@ li {
         height: 100%;
         background: #F1F1F1;
     }
-    &__lottie{
+
+    &__lottie {
         position: relative;
         bottom: 5%;
         width: 30vh;

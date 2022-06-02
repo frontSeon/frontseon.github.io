@@ -6,6 +6,7 @@ $(function () {
         direction: 'vertical',
         resistanceRatio: 0,
         loop: false,
+        speed: 600,
         mousewheel: true,
         keyboard: true,
 
@@ -16,16 +17,21 @@ $(function () {
                 changeButton(n);
             }
         },
-        
-        // main-title-animation
         on: {
             activeIndexChange: function(){
+                // main-title-animation
                 if(this.realIndex === 0){
-                    $('.section__main_tit_ani').addClass('section__main_tit_ani-on');
-                    $('.section__main_tit_ani').removeClass('hidden');
+                    $('.section__main_tit_ani, .section__sub_tit').addClass('section__main_tit_ani-on, section__sub_tit-on');
+                    $('.section__main_tit_ani, .section__sub_tit').removeClass('hidden');
                 }else{
-                    $('.section__main_tit_ani').removeClass('section__main_tit_ani-on');
-                    $('.section__main_tit_ani').addClass('hidden');
+                    $('.section__main_tit_ani, .section__sub_tit').removeClass('section__main_tit_ani-on, section__sub_tit-on');
+                    $('.section__main_tit_ani, .section__sub_tit').addClass('hidden');
+                }
+                // navigation-background
+                if(this.realIndex === 1){
+                    $('.navi_bg').slideDown(200);
+                }else{
+                    $('.navi_bg').slideUp(200);
                 }
             }
         },
@@ -49,6 +55,8 @@ $(function () {
     // navigation-mobile
     $('.navi_menu__btn').on('click', function () {
         $('.navi_menu-mobile__btn').toggleClass('hidden');
+        $('.navi_bg__btn').toggleClass('navi_bg__btn-on')
+        $('.navi_bg__btn').removeClass('navi_bg__btn-disabled')
     });
     $('.navi_menu__btn').on('click', function () {
         $('.navi_menu__btn_active').toggleClass('hidden');
@@ -57,6 +65,8 @@ $(function () {
         if (!$('.navi_menu-mobile__btn').hasClass('hidden')) {
             $('.navi_menu-mobile__btn').addClass('hidden')
             $('.navi_menu__btn_active').addClass('hidden')
+            $('.navi_bg__btn').toggleClass('navi_bg__btn-on')
+            $('.navi_bg__btn').removeClass('navi_bg__btn-disabled')
         }
     });
 
