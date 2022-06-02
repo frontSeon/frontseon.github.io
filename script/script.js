@@ -30,8 +30,12 @@ $(function () {
                 // navigation-background
                 if(this.realIndex === 1){
                     $('.navi_bg').slideDown(200);
+                    $('.swiper-pagination-bullet').addClass('swiper-pagination-bullet-2')
+                    $('.swiper-pagination-bullet').eq(1).addClass('swiper-pagination-bullet-active-2')
                 }else{
                     $('.navi_bg').slideUp(200);
+                    $('.swiper-pagination-bullet').removeClass('swiper-pagination-bullet-2')
+                    $('.swiper-pagination-bullet').eq(1).removeClass('swiper-pagination-bullet-active-2')
                 }
             }
         },

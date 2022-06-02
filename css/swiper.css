@@ -10,6 +10,10 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
+.swiper-pagination .swiper-pagination-bullet-2 {
+  background: #00c1bc;
+}
+
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 0.5vh;
   height: 0.5vh;
@@ -20,6 +24,10 @@
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
   background: white;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active-2 {
+  background: #00c1bc;
 }
 
 @-webkit-keyframes swiperActive {
