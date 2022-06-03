@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.navi_wrap {
+.navi__wrap {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,19 +17,19 @@
   padding: 1vh 2vh;
 }
 
-.navi_logo {
+.navi__logo {
   position: relative;
   cursor: pointer;
 }
 
-.navi_logo__img {
+.navi__logo_img {
   width: 6vh;
   height: 6vh;
   background: url(/images/header/header_logo.png) no-repeat center;
   background-size: 100% auto;
 }
 
-.navi_menu-pc {
+.navi__menu-pc {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,7 +45,7 @@
   margin-left: auto;
 }
 
-.navi_menu-pc__btn {
+.navi__menu-pc_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +60,7 @@
   cursor: pointer;
 }
 
-.navi_menu-pc__btn_txt {
+.navi__menu-pc_btn_txt {
   line-height: 5vh;
   opacity: 1;
   font-weight: 400;
@@ -69,7 +69,7 @@
   font-family: 'Dancing Script', sans-serif;
 }
 
-.navi_menu-pc__btn_bd {
+.navi__menu-pc_btn_bd {
   position: absolute;
   top: 0;
   width: 33%;
@@ -81,7 +81,7 @@
   opacity: 0;
 }
 
-.navi_menu-pc__btn_bd:hover {
+.navi__menu-pc_btn_bd:hover {
   -webkit-animation: pcbtnActive;
           animation: pcbtnActive;
   -webkit-animation-fill-mode: forwards;
@@ -92,7 +92,7 @@
           animation-timing-function: ease-in-out;
 }
 
-.navi_menu__btn {
+.navi__menu_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +116,7 @@
   cursor: pointer;
 }
 
-.navi_menu__btn_active {
+.navi__menu_btn_bg {
   width: 5vh;
   height: 5vh;
   background-color: #F1F1F1;
@@ -129,7 +129,7 @@
           animation-duration: 0.3s;
 }
 
-.navi_menu-mobile {
+.navi__menu-mobile {
   position: absolute;
   top: 7vh;
   right: 0;
@@ -147,7 +147,7 @@
   margin-left: auto;
 }
 
-.navi_menu-mobile__btn {
+.navi__menu-mobile_btn {
   position: absolute;
   top: -5.5vh;
   right: 2vh;
@@ -162,7 +162,7 @@
   cursor: pointer;
 }
 
-.navi_menu-mobile__btn:nth-of-type(1) {
+.navi__menu-mobile_btn:nth-of-type(1) {
   -webkit-animation: btnActive1;
           animation: btnActive1;
   -webkit-animation-fill-mode: forwards;
@@ -173,7 +173,7 @@
           animation-timing-function: ease-in-out;
 }
 
-.navi_menu-mobile__btn:nth-of-type(2) {
+.navi__menu-mobile_btn:nth-of-type(2) {
   -webkit-animation: btnActive2;
           animation: btnActive2;
   -webkit-animation-fill-mode: forwards;
@@ -184,7 +184,7 @@
           animation-timing-function: ease-in-out;
 }
 
-.navi_menu-mobile__btn:nth-of-type(3) {
+.navi__menu-mobile_btn:nth-of-type(3) {
   -webkit-animation: btnActive3;
           animation: btnActive3;
   -webkit-animation-fill-mode: forwards;
@@ -195,12 +195,12 @@
           animation-timing-function: ease-in-out;
 }
 
-.navi_menu-mobile__btn:hover {
+.navi__menu-mobile_btn:hover {
   background-color: #00c1bc;
   color: #F1F1F1;
 }
 
-.navi_bg {
+.navi__bg {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -211,7 +211,7 @@
   display: none;
 }
 
-.navi_bg__btn {
+.navi__bg_btn {
   position: absolute;
   right: 0;
   top: -15vh;
@@ -221,7 +221,7 @@
   background: #00c1bc;
 }
 
-.navi_bg__btn-on {
+.navi__bg_btn-on {
   -webkit-animation: naviBgon;
           animation: naviBgon;
   -webkit-animation-duration: 0.3s;
@@ -230,7 +230,7 @@
           animation-fill-mode: forwards;
 }
 
-.navi_bg__btn-disabled {
+.navi__bg_btn-disabled {
   -webkit-animation: naviBgdisabled;
           animation: naviBgdisabled;
   -webkit-animation-duration: 0.3s;
@@ -376,16 +376,16 @@
 }
 
 @media all and (max-width: 999px) {
-  .navi_menu-pc {
+  .navi__menu-pc {
     display: none;
   }
 }
 
 @media all and (min-width: 1000px) {
-  .navi_menu-mobile {
+  .navi__menu-mobile {
     display: none;
   }
-  .navi_menu__btn {
+  .navi__menu_btn {
     display: none;
   }
 }
