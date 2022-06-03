@@ -32,8 +32,72 @@ li {
 .section {
   overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+}
+
+.section__scroll {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.section__scroll_lottie {
+  width: 6vh;
+  height: 6vh;
+}
+
+.section__tit {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -8vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  color: #F1F1F1;
+  opacity: 0;
+}
+
+.section__tit-on {
+  -webkit-animation: mainAni;
+          animation: mainAni;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.section__tit_sub {
+  position: relative;
+  top: 10px;
+  margin-left: 2vh;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2rem;
 }
 
 .section__bg {

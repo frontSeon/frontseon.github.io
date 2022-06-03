@@ -18,24 +18,30 @@ $(function () {
             }
         },
         on: {
-            activeIndexChange: function(){
+            activeIndexChange: function () {
+
                 // main-title-animation
-                if(this.realIndex === 0){
-                    $('.section__main_tit_ani, .section__sub_tit').addClass('section__main_tit_ani-on, section__sub_tit-on');
-                    $('.section__main_tit_ani, .section__sub_tit').removeClass('hidden');
-                }else{
-                    $('.section__main_tit_ani, .section__sub_tit').removeClass('section__main_tit_ani-on, section__sub_tit-on');
-                    $('.section__main_tit_ani, .section__sub_tit').addClass('hidden');
+                if (this.realIndex === 0) {
+                    $('.section__main_tit_ani').addClass('section__main_tit_ani-on');
+                    $('.section__sub_tit').addClass('section__sub_tit-on');
+                    $('.section__sub_tit').addClass('section__tit-on');
+                    $('.section__main_tit_ani, .section__sub_tit, .section__tit').removeClass('hidden');
+                } else {
+                    $('.section__main_tit_ani').removeClass('section__main_tit_ani-on');
+                    $('.section__sub_tit').removeClass('section__sub_tit-on');
+                    $('.section__sub_tit').removeClass('section__tit-on');
+                    $('.section__main_tit_ani, .section__sub_tit, .section__tit').addClass('hidden');
                 }
+
                 // navigation-background
-                if(this.realIndex === 1){
+                if (this.realIndex === 1) {
                     $('.navi__bg').slideDown(200);
-                    $('.swiper-pagination-bullet').addClass('swiper-pagination-bullet-2')
-                    $('.swiper-pagination-bullet').eq(1).addClass('swiper-pagination-bullet-active-2')
-                }else{
+                    $('.swiper-pagination-bullet').addClass('swiper-pagination-bullet-2');
+                    $('.swiper-pagination-bullet').eq(1).addClass('swiper-pagination-bullet-active-2');
+                } else {
                     $('.navi__bg').slideUp(200);
-                    $('.swiper-pagination-bullet').removeClass('swiper-pagination-bullet-2')
-                    $('.swiper-pagination-bullet').eq(1).removeClass('swiper-pagination-bullet-active-2')
+                    $('.swiper-pagination-bullet').removeClass('swiper-pagination-bullet-2');
+                    $('.swiper-pagination-bullet').eq(1).removeClass('swiper-pagination-bullet-active-2');
                 }
             }
         },
@@ -59,18 +65,18 @@ $(function () {
     // navigation-mobile
     $('.navi__menu_btn').on('click', function () {
         $('.navi__menu-mobile_btn').toggleClass('hidden');
-        $('.navi__bg_btn').toggleClass('navi__bg_btn-on')
-        $('.navi__bg_btn').removeClass('navi__bg_btn-disabled')
+        $('.navi__bg_btn').toggleClass('navi__bg_btn-on');
+        $('.navi__bg_btn').removeClass('navi__bg_btn-disabled');
     });
     $('.navi__menu_btn').on('click', function () {
         $('.navi__menu_btn_bg').toggleClass('hidden');
     });
     $('.section').on('click', function () {
         if (!$('.navi__menu-mobile_btn').hasClass('hidden')) {
-            $('.navi__menu-mobile_btn').addClass('hidden')
-            $('.navi__menu_btn_active').addClass('hidden')
-            $('.navi__bg_btn').toggleClass('navi__bg_btn-on')
-            $('.navi__bg_btn').removeClass('navi__bg_btn-disabled')
+            $('.navi__menu-mobile_btn').addClass('hidden');
+            $('.navi__menu_btn_bg').addClass('hidden');
+            $('.navi__bg_btn').toggleClass('navi__bg_btn-on');
+            $('.navi__bg_btn').removeClass('navi__bg_btn-disabled');
         }
     });
 
@@ -80,21 +86,37 @@ $(function () {
     });
 
     // loading
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('.loading').addClass('hidden');
     });
 
     let loadingAni = document.getElementsByClassName("loading__lottie");
+
     function loadBMAnimation(loader) {
         var animation = lottie.loadAnimation({
-        container: loader,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "/lottie/loading.json"
+            container: loader,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/lottie/loading.json"
         });
     }
     for (let i = 0; i < loadingAni.length; i++) {
         loadBMAnimation(loadingAni[i]);
+    }
+
+    let scrollAni = document.getElementsByClassName("section__scroll_lottie");
+
+    function loadBMAnimation(loader) {
+        var animation = lottie.loadAnimation({
+            container: loader,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/lottie/scroll.json"
+        });
+    }
+    for (let i = 0; i < scrollAni.length; i++) {
+        loadBMAnimation(scrollAni[i]);
     }
 });

@@ -30,8 +30,51 @@ li {
 .section {
     overflow: hidden;
     position: relative;
+    display: flex;
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    &__scroll{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        &_lottie{
+            width: 6vh;
+            height: 6vh;
+        }
+    }
+    &__tit {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -8vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        font-family: 'Dancing Script', sans-serif;
+        font-weight: 400;
+        font-size: 5rem;
+        color: #F1F1F1;
+        opacity: 0;
+
+        &-on {
+            animation: mainAni;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 3.6s;
+        }
+
+        &_sub {
+            position: relative;
+            top: 10px;
+            margin-left: 2vh;
+            font-family: 'Dancing Script', sans-serif;
+            font-size: 2rem;
+        }
+    }
 
     &__bg {
         position: absolute;
@@ -130,6 +173,7 @@ li {
             animation-fill-mode: forwards;
             animation-duration: 0.8s;
             animation-delay: 1.8s, 3.5s;
+
         }
 
         &_bar {
