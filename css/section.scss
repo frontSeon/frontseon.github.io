@@ -1,0 +1,183 @@
+// section
+.section {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+
+    &__scroll {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        &_lottie {
+            width: 6vh;
+            height: 6vh;
+        }
+    }
+
+    &__tit {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -8vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Dancing Script', sans-serif;
+        font-weight: 400;
+        font-size: 5rem;
+        color: #F1F1F1;
+        opacity: 0;
+
+        &-on {
+            animation: mainAni;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 3.6s;
+        }
+
+        &_sub {
+            position: relative;
+            top: 10px;
+            margin-left: 2vh;
+            font-family: 'Dancing Script', sans-serif;
+            font-size: 2rem;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        user-select: none;
+
+        &_dim {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        &_video {
+            height: 120vh;
+        }
+    }
+
+    &_wrap {
+        position: relative;
+        margin-top: 8vh;
+        padding: 20px;
+    }
+
+    &__main_tit {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+
+        span {
+            font-size: 5rem;
+            font-weight: 400;
+            font-family: 'Dancing Script', sans-serif;
+            color: #F1F1F1;
+        }
+
+        &_ani {
+            opacity: 0;
+            animation: mainAni, mainAniout;
+            animation-fill-mode: forwards;
+            animation-duration: 0.8s;
+
+            &-on {
+                &:nth-of-type(1) {
+                    animation-delay: 0.2s, 3.5s;
+                }
+
+                &:nth-of-type(2) {
+                    animation-delay: 0.4s, 3.5s;
+                }
+
+                &:nth-of-type(3) {
+                    animation-delay: 0.6s, 3.5s;
+                }
+
+                &:nth-of-type(4) {
+                    animation-delay: 0.8s, 3.5s;
+                }
+
+                &:nth-of-type(5) {
+                    animation-delay: 1s, 3.5s;
+                }
+
+                &:nth-of-type(6) {
+                    animation-delay: 1.2s, 3.5s;
+                }
+
+                &:nth-of-type(7) {
+                    animation-delay: 1.4s, 3.5s;
+                }
+
+                &:nth-of-type(8) {
+                    animation-delay: 1.6s, 3.5s;
+                }
+            }
+        }
+    }
+
+    &__sub_tit {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 3vh;
+        font-size: 1.8rem;
+        font-weight: 100;
+        color: #F1F1F1;
+        opacity: 0;
+
+        &-on {
+            animation: mainAni, mainAniout;
+            animation-fill-mode: forwards;
+            animation-duration: 0.8s;
+            animation-delay: 1.8s, 3.5s;
+
+        }
+
+        &_bar {
+            width: 1vh;
+            height: 3vh;
+            margin-right: 1vh;
+            background: #F1F1F1;
+        }
+    }
+}
+
+@keyframes mainAni {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mainAniout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
