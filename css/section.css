@@ -10,10 +10,14 @@
 
 .section__scroll {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -21,11 +25,27 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+  opacity: 0;
 }
 
 .section__scroll_lottie {
   width: 6vh;
   height: 6vh;
+}
+
+.section__scroll_txt {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #F1F1F1;
 }
 
 .section__tit {
@@ -51,8 +71,8 @@
 }
 
 .section__tit-on {
-  -webkit-animation: mainAni;
-          animation: mainAni;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
@@ -118,8 +138,8 @@
 
 .section__main_tit_ani {
   opacity: 0;
-  -webkit-animation: mainAni, mainAniout;
-          animation: mainAni, mainAniout;
+  -webkit-animation: fadeIn, fadeOut;
+          animation: fadeIn, fadeOut;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.8s;
@@ -184,8 +204,8 @@
 }
 
 .section__sub_tit-on {
-  -webkit-animation: mainAni, mainAniout;
-          animation: mainAni, mainAniout;
+  -webkit-animation: fadeIn, fadeOut;
+          animation: fadeIn, fadeOut;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.8s;
@@ -201,7 +221,7 @@
   background: #F1F1F1;
 }
 
-@-webkit-keyframes mainAni {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -210,7 +230,7 @@
   }
 }
 
-@keyframes mainAni {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -219,7 +239,7 @@
   }
 }
 
-@-webkit-keyframes mainAniout {
+@-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
   }
@@ -228,7 +248,7 @@
   }
 }
 
-@keyframes mainAniout {
+@keyframes fadeOut {
   0% {
     opacity: 1;
   }
