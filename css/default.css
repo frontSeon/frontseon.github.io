@@ -36,5 +36,7 @@ li {
   z-index: 9999;
   width: 100vw;
   height: 100vh;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 /*# sourceMappingURL=default.css.map */
