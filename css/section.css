@@ -25,6 +25,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  opacity: 0;
+}
+
+.section__scroll-on {
   -webkit-animation: fadeIn;
           animation: fadeIn;
   -webkit-animation-fill-mode: forwards;
@@ -33,7 +37,6 @@
           animation-duration: 0.8s;
   -webkit-animation-delay: 4.3s;
           animation-delay: 4.3s;
-  opacity: 0;
 }
 
 .section__scroll_lottie {

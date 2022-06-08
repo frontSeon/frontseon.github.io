@@ -7,11 +7,12 @@
   width: 0.5vh;
   height: 0.5vh;
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.7);
+  background: #F1F1F1;
+  opacity: 0.7;
 }
 
 .swiper-pagination .swiper-pagination-bullet-2 {
-  background: #00c1bc;
+  background: #44d7be;
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -23,11 +24,12 @@
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
-  background: white;
+  background: #F1F1F1;
+  opacity: 1;
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active-2 {
-  background: #00c1bc;
+  background: #44d7be;
 }
 
 @-webkit-keyframes swiperActive {

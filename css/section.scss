@@ -1,3 +1,5 @@
+@import "./variable.scss";
+
 // section
 .section {
     overflow: hidden;
@@ -14,11 +16,14 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        animation: fadeIn;
-        animation-fill-mode: forwards;
-        animation-duration: 0.8s;
-        animation-delay: 4.3s;
         opacity: 0;
+
+        &-on{
+            animation: fadeIn;
+            animation-fill-mode: forwards;
+            animation-duration: 0.8s;
+            animation-delay: 4.3s;
+        }
 
         &_lottie {
             width: 6vh;
@@ -29,7 +34,7 @@
             font-family: 'Dancing Script', sans-serif;
             font-size: 2rem;
             font-weight: 400;
-            color: #F1F1F1;
+            color: $font-color;
         }
     }
 
@@ -45,7 +50,7 @@
         font-family: 'Dancing Script', sans-serif;
         font-weight: 400;
         font-size: 5rem;
-        color: #F1F1F1;
+        color: $font-color;
         opacity: 0;
 
         &-on {
@@ -75,7 +80,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: $dim-color;
         }
 
         &_video {
@@ -101,7 +106,7 @@
             font-size: 5rem;
             font-weight: 400;
             font-family: 'Dancing Script', sans-serif;
-            color: #F1F1F1;
+            color: $font-color;
         }
 
         &_ani {
@@ -155,7 +160,7 @@
         margin-top: 3vh;
         font-size: 1.8rem;
         font-weight: 100;
-        color: #F1F1F1;
+        color: $font-color;
         opacity: 0;
 
         &-on {
@@ -170,7 +175,7 @@
             width: 1vh;
             height: 3vh;
             margin-right: 1vh;
-            background: #F1F1F1;
+            background: $font-color;
         }
     }
 }

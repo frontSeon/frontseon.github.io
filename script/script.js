@@ -25,12 +25,14 @@ $(function () {
                     $('.section__main_tit_ani').addClass('section__main_tit_ani-on');
                     $('.section__sub_tit').addClass('section__sub_tit-on');
                     $('.section__sub_tit').addClass('section__tit-on');
-                    $('.section__main_tit_ani, .section__sub_tit, .section__tit').removeClass('hidden');
+                    $('.section__scroll').addClass('section__scroll-on');
+                    $('.section__main_tit_ani, .section__sub_tit, .section__tit, .section__scroll').removeClass('hidden');
                 } else {
                     $('.section__main_tit_ani').removeClass('section__main_tit_ani-on');
                     $('.section__sub_tit').removeClass('section__sub_tit-on');
                     $('.section__sub_tit').removeClass('section__tit-on');
-                    $('.section__main_tit_ani, .section__sub_tit, .section__tit').addClass('hidden');
+                    $('.section__scroll').removeClass('section__scroll-on');
+                    $('.section__main_tit_ani, .section__sub_tit, .section__tit, .section__scroll').addClass('hidden');
                 }
 
                 // navigation-background

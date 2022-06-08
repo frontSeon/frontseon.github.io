@@ -1,3 +1,5 @@
+@import "./variable.scss";
+
 // navigation
 .navi {
     position: fixed;
@@ -47,7 +49,7 @@
                 opacity: 1;
                 font-weight: 400;
                 font-size: 1.6rem;
-                color: #F1F1F1;
+                color: $font-color;
                 font-family: 'Dancing Script', sans-serif;
             }
 
@@ -58,7 +60,7 @@
                 height: 5vh;
                 border: 1px solid transparent;
                 box-sizing: border-box;
-                border-color: #F4F4F4;
+                border-color: $font-color;
                 opacity: 0;
 
                 &:hover {
@@ -80,16 +82,16 @@
         font-weight: 700;
         margin-left: auto;
         border: 2px solid transparent;
-        border-color: #F1F1F1;
+        border-color: $font-color;
         border-radius: 50px;
         box-sizing: border-box;
-        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: $dim-color;
         cursor: pointer;
 
         &_bg {
             width: 5vh;
             height: 5vh;
-            background-color: #F1F1F1;
+            background-color: $font-color;
             border-radius: 30px;
             animation: btnActive;
             animation-fill-mode: forwards;
@@ -115,8 +117,8 @@
             line-height: 5vh;
             width: 5vh;
             height: 5vh;
-            background-color: #F1F1F1;
-            box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+            background-color: $font-color;
+            box-shadow: $dim-color;
             border-radius: 50px;
             cursor: pointer;
 
@@ -142,8 +144,8 @@
             }
 
             &:hover {
-                background-color: #00c1bc;
-                color: #F1F1F1;
+                background-color: $primary-color;
+                color: $font-color;
             }
         }
     }
@@ -154,7 +156,7 @@
         left: 0;
         width: 100%;
         height: 8vh;
-        background: #00c1bc;
+        background: $primary-color;
         display: none;
         &_btn{
             position: absolute;
@@ -163,7 +165,7 @@
             width: 15vh;
             height: 16.5vh;
             border-radius: 0 0 0 30px;
-            background: #00c1bc;
+            background: $primary-color;
             &-on{
                 animation: naviBgon;
                 animation-duration: 0.3s;
