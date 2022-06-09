@@ -180,6 +180,15 @@
     }
 }
 
+// mobile-width
+@media all and (max-height:460px){
+    .section__bg_video{
+        height: auto;
+        width: 100vw;
+    }
+}
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

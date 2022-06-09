@@ -224,6 +224,13 @@
   background: #F1F1F1;
 }
 
+@media all and (max-height: 460px) {
+  .section__bg_video {
+    height: auto;
+    width: 100vw;
+  }
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
