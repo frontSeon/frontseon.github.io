@@ -68,6 +68,9 @@ $(document).ready(function () {
                 }
                 if (this.realIndex === 2) {
 
+                    // bg-animation
+                    $('.section__deep').addClass('section__deep-on');
+
                     //disabled
                     if (!$('.disabled').hasClass('disabled-2')) {
                         setTimeout(function () {
@@ -78,6 +81,8 @@ $(document).ready(function () {
                         $('.disabled').addClass('hidden')
                     }, 4300);
                     $('.disabled').addClass('disabled-2')
+                } else{
+                    $('.section__deep').removeClass('section__deep-on');
                 }
             }
         },
