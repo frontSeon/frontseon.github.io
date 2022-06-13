@@ -46,7 +46,7 @@
 
 .section__scroll_txt {
   font-family: 'Dancing Script', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #F1F1F1;
 }
@@ -68,7 +68,7 @@
   height: 100vh;
   font-family: 'Dancing Script', sans-serif;
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #F1F1F1;
   opacity: 0;
 }
@@ -89,7 +89,7 @@
   top: 10px;
   margin-left: 2vh;
   font-family: 'Dancing Script', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .section__bg {
@@ -133,7 +133,7 @@
 }
 
 .section__main_tit span {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 400;
   font-family: 'Dancing Script', sans-serif;
   color: #F1F1F1;
@@ -200,7 +200,7 @@
   width: 100%;
   height: auto;
   margin-top: 3vh;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 100;
   color: #F1F1F1;
   opacity: 0;
@@ -257,43 +257,43 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 
 .section__wave_content:nth-of-type(1) {
   top: -55vh;
   opacity: 0.4;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .section__wave_content:nth-of-type(2) {
   top: -60vh;
   opacity: 0.4;
-  -webkit-animation-duration: 14s;
-          animation-duration: 14s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 
 .section__wave_content:nth-of-type(3) {
   top: -64vh;
   opacity: 0.4;
-  -webkit-animation-duration: 13s;
-          animation-duration: 13s;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
 }
 
 .section__wave_content:nth-of-type(4) {
   top: -67vh;
   opacity: 0.4;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
 }
 
 .section__wave_content:nth-of-type(5) {
   top: -69vh;
   opacity: 1;
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 
 .section__deep {

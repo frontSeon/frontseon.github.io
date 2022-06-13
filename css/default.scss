@@ -3,15 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 /* default */
-* {
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 62.5%;
-    user-select: none;
-}
-
+// reset-css
 html,
 body,
 div,
@@ -96,7 +88,6 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -141,6 +132,15 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 62.5%;
+    user-select: none;
 }
 
 .hidden {
