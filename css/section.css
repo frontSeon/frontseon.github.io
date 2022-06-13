@@ -116,8 +116,39 @@
 
 .section_wrap {
   position: relative;
+  width: 100%;
   margin-top: 8vh;
   padding: 20px;
+}
+
+.section_wrap-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__prf {
+  position: relative;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-color: #F1F1F1;
+  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.section__prf_img {
+  width: 100%;
+  height: 100%;
+  background: url(../images/section2/prf_ex.jpg) no-repeat center;
+  background-size: 200%;
 }
 
 .section__main_tit {
