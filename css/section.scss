@@ -97,8 +97,8 @@
         // section2
         &-col {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
 
     }
@@ -107,13 +107,12 @@
         position: relative;
         width: 30vh;
         height: 30vh;
-        margin-bottom: auto;
         border-radius: 50%;
         background-color: $font-color;
         box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
         overflow: hidden;
 
-        &_dim{
+        &_dim {
             position: absolute;
             z-index: 1;
             top: 0;
@@ -128,6 +127,30 @@
             height: 100%;
             background: url(../images/section2/prf_ex.jpg) no-repeat center;
             background-size: 200%;
+        }
+    }
+
+    &__intro {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
+
+        &_txt {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: $primary-color;
+        }
+
+        &_bar {
+            margin-top: 5px;
+            width: 130px;
+            height: 2px;
+            background-color: $primary-color;
         }
     }
 
@@ -342,7 +365,7 @@
 // pc-wave
 @media all and (min-width:360px) and (max-width:560px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 170vh;
             height: 170vh;
 
@@ -371,7 +394,7 @@
 
 @media all and (min-width:560px) and (max-width:760px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 190vh;
             height: 190vh;
 
@@ -400,7 +423,7 @@
 
 @media all and (min-width:760px) and (max-width:960px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 210vh;
             height: 210vh;
 
@@ -429,7 +452,7 @@
 
 @media all and (min-width:960px) and (max-width:1160px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 230vh;
             height: 230vh;
 
@@ -458,7 +481,7 @@
 
 @media all and (min-width:1160px) and (max-width:1360px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 250vh;
             height: 250vh;
 
@@ -487,7 +510,7 @@
 
 @media all and (min-width:1360px) and (max-width:1560px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 270vh;
             height: 270vh;
 
@@ -516,7 +539,7 @@
 
 @media all and (min-width:1560px) and (max-width:1760px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 290vh;
             height: 290vh;
 
@@ -545,7 +568,7 @@
 
 @media all and (min-width:1760px) {
     .section__wave {
-        &__cotent {
+        &_content {
             width: 310vh;
             height: 310vh;
 
