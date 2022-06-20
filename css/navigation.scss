@@ -146,6 +146,7 @@
             &:hover {
                 background-color: $primary-color;
                 color: $font-color;
+                box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
             }
         }
     }
