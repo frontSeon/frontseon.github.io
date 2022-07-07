@@ -130,29 +130,6 @@
         }
     }
 
-    &__intro {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 15px;
-        text-align: center;
-
-        &_txt {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: $primary-color;
-        }
-
-        &_bar {
-            margin-top: 5px;
-            width: 130px;
-            height: 2px;
-            background-color: $primary-color;
-        }
-    }
 
     &__main_tit {
         position: relative;
@@ -255,7 +232,7 @@
             top: 0;
             width: 150vh;
             height: 150vh;
-            border-radius: 43%;
+            border-radius: 44% 46%;
             background-color: $font-color;
             animation-name: rotateAni;
             animation-iteration-count: infinite;
@@ -366,8 +343,8 @@
 @media all and (min-width:360px) and (max-width:560px) {
     .section__wave {
         &_content {
-            width: 170vh;
-            height: 170vh;
+            width: 180vh;
+            height: 180vh;
 
             &:nth-of-type(1) {
                 top: -75vh;
@@ -395,8 +372,8 @@
 @media all and (min-width:560px) and (max-width:760px) {
     .section__wave {
         &_content {
-            width: 190vh;
-            height: 190vh;
+            width: 200vh;
+            height: 200vh;
 
             &:nth-of-type(1) {
                 top: -95vh;
@@ -424,8 +401,8 @@
 @media all and (min-width:760px) and (max-width:960px) {
     .section__wave {
         &_content {
-            width: 210vh;
-            height: 210vh;
+            width: 220vh;
+            height: 220vh;
 
             &:nth-of-type(1) {
                 top: -115vh;
@@ -453,8 +430,8 @@
 @media all and (min-width:960px) and (max-width:1160px) {
     .section__wave {
         &_content {
-            width: 230vh;
-            height: 230vh;
+            width: 240vh;
+            height: 240vh;
 
             &:nth-of-type(1) {
                 top: -135vh;
@@ -482,8 +459,8 @@
 @media all and (min-width:1160px) and (max-width:1360px) {
     .section__wave {
         &_content {
-            width: 250vh;
-            height: 250vh;
+            width: 260vh;
+            height: 260vh;
 
             &:nth-of-type(1) {
                 top: -155vh;
@@ -511,8 +488,8 @@
 @media all and (min-width:1360px) and (max-width:1560px) {
     .section__wave {
         &_content {
-            width: 270vh;
-            height: 270vh;
+            width: 280vh;
+            height: 280vh;
 
             &:nth-of-type(1) {
                 top: -175vh;
@@ -540,8 +517,8 @@
 @media all and (min-width:1560px) and (max-width:1760px) {
     .section__wave {
         &_content {
-            width: 290vh;
-            height: 290vh;
+            width: 300vh;
+            height: 300vh;
 
             &:nth-of-type(1) {
                 top: -195vh;
@@ -569,8 +546,8 @@
 @media all and (min-width:1760px) {
     .section__wave {
         &_content {
-            width: 310vh;
-            height: 310vh;
+            width: 320vh;
+            height: 320vh;
 
             &:nth-of-type(1) {
                 top: -215vh;
