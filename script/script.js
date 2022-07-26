@@ -169,7 +169,7 @@ const swiper = new Swiper('.swiper2', {
     slideClass: 'section__swiper_slide',
     slidesPerView: 'auto',
     spaceBetween: 50,
-    loop: false,
+    loop: true,
     speed: 600,
     mousewheel: true,
     keyboard: true,

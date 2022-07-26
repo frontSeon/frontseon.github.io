@@ -37,7 +37,7 @@
 }
 
 .section__wrap-swiper {
-  margin-left: 30vw;
+  margin-left: auto;
 }
 
 .section__swiper {
@@ -64,8 +64,8 @@
 
 .section__swiper_slide {
   position: relative;
-  width: 20vw;
-  height: 30vw;
+  width: 40vh;
+  height: 50vh;
   background: #F1F1F1;
   opacity: 0.6;
   border-radius: 30px;
@@ -121,26 +121,26 @@
 
 @-webkit-keyframes swiperActive2 {
   0% {
-    width: 20vw;
-    height: 30vw;
+    width: 40vh;
+    height: 50vh;
     opacity: 0.6;
   }
   100% {
-    width: 30vw;
-    height: 40vw;
+    width: 40vh;
+    height: 60vh;
     opacity: 1;
   }
 }
 
 @keyframes swiperActive2 {
   0% {
-    width: 20vw;
-    height: 30vw;
+    width: 40vh;
+    height: 50vh;
     opacity: 0.6;
   }
   100% {
-    width: 30vw;
-    height: 40vw;
+    width: 40vh;
+    height: 60vh;
     opacity: 1;
   }
 }
