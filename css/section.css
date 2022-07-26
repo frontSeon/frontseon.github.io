@@ -114,14 +114,15 @@
   height: 120vh;
 }
 
-.section_wrap {
+.section__wrap {
   position: relative;
   width: 100%;
   margin-top: 8vh;
   padding: 20px;
+  z-index: 1;
 }
 
-.section_wrap-col {
+.section__wrap-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,6 +357,7 @@
   height: 300vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #44d7be), color-stop(90%, #2b8374));
   background: linear-gradient(180deg, #44d7be 10%, #2b8374 90%);
+  z-index: -1;
 }
 
 .section__deep-on {

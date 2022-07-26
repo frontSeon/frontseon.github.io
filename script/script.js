@@ -162,3 +162,18 @@ $(document).ready(function () {
     }
 
 });
+
+// swiper2
+const swiper = new Swiper('.swiper2', {
+    wrapperClass: 'section__swiper_wrap',
+    slideClass: 'section__swiper_slide',
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    loop: false,
+    speed: 600,
+    mousewheel: true,
+    keyboard: true,
+    pagination: {
+        el: '.section__swiper_pagination',
+    }
+});

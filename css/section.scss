@@ -88,11 +88,12 @@
         }
     }
 
-    &_wrap {
+    &__wrap {
         position: relative;
         width: 100%;
         margin-top: 8vh;
         padding: 20px;
+        z-index: 1;
 
         // section2
         &-col {
@@ -281,6 +282,7 @@
         width: 100vw;
         height: 300vh;
         background: linear-gradient(180deg, $primary-color 10%, $accent-color 90%);
+        z-index: -1;
 
         &-on {
             animation-name: deepDown;
